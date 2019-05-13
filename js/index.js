@@ -39,11 +39,30 @@ const siteContent = {
 //Header + Nav
 const navLinks = document.querySelectorAll('header nav a');
 navLinks[0].textContent = 'Services';
+navLinks[0].style.color = 'green';
 navLinks[1].textContent = 'Product';
+navLinks[1].style.color = 'green';
 navLinks[2].textContent = 'Vision';
+navLinks[2].style.color = 'green';
 navLinks[3].textContent = 'Features';
+navLinks[3].style.color = 'green';
 navLinks[4].textContent = 'About';
+navLinks[4].style.color = 'green';
 navLinks[5].textContent = 'Contact';
+navLinks[5].style.color = 'green';
+
+const newNavLinks = document.querySelector('nav');
+
+const newA1 = document.createElement('a')
+newA1.textContent = 'Careers';
+newA1.style.color = 'green';
+
+const newA2 = document.createElement('a')
+newA2.textContent = 'Home';
+newA2.style.color = 'green';
+
+newNavLinks.appendChild(newA1);
+newNavLinks.prepend(newA2);
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -80,3 +99,17 @@ let botPara = document.querySelectorAll('.bottom-content p');
 botPara[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 botPara[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 botPara[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+// contact
+let contactH4 = document.querySelectorAll('.contact h4');
+contactH4[0].textContent = 'Contact';
+
+let contactPara = document.querySelectorAll('.contact p');
+contactPara[0].textContent = '123 Way 456 Street Somewhere, USA'
+contactPara[1].textContent = '1 (888) 888-8888'
+contactPara[2].textContent = 'sales@greatidea.io'
+
+//footer
+let foot = document.querySelectorAll('footer p');
+foot[0].textContent = 'Copyright Great Idea! 2018';
+
