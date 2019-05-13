@@ -70,3 +70,13 @@ topPara[1].textContent = 'About content elementum magna eros, ac posuere elvit t
 
 let midPic = document.getElementById("middle-img");
 midPic.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let botH4 = document.querySelectorAll('.bottom-content h4');
+botH4[0].textContent = 'Services';
+botH4[1].textContent = 'Product';
+botH4[2].textContent = 'Vision';
+
+let botPara = document.querySelectorAll('.bottom-content p');
+botPara[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+botPara[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+botPara[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
