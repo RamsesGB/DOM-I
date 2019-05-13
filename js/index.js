@@ -36,7 +36,37 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+//Header + Nav
+const navLinks = document.querySelectorAll('header nav a');
+navLinks[0].textContent = 'Services';
+navLinks[1].textContent = 'Product';
+navLinks[2].textContent = 'Vision';
+navLinks[3].textContent = 'Features';
+navLinks[4].textContent = 'About';
+navLinks[5].textContent = 'Contact';
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// cta class
+let h1Txt = document.querySelector('.cta .cta-text h1');
+h1Txt.textContent = 'DOM Is Awesome';
+
+let buttonTxt = document.querySelector('.cta .cta-text button');
+buttonTxt.textContent = 'Get Started';
+
+let roundPic = document.getElementById("cta-img");
+roundPic.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// main content
+let topH4 = document.querySelectorAll('.top-content h4');
+topH4[0].textContent = 'Features';
+topH4[1].textContent = 'About';
+
+let topPara = document.querySelectorAll('.top-content p');
+topPara[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+topPara[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+let midPic = document.getElementById("middle-img");
+midPic.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
