@@ -51,6 +51,8 @@ navLinks[4].style.color = 'green';
 navLinks[5].textContent = 'Contact';
 navLinks[5].style.color = 'green';
 
+
+//adding new <a> tags 
 const newNavLinks = document.querySelector('nav');
 
 const newA1 = document.createElement('a')
